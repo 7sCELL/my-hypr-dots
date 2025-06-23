@@ -2,7 +2,7 @@
 echo "Changing directory to my-hypr-dots"
 cd my-hypr-dots
 
-#mv my bashrc to home
+#mv my confs
 echo "configs"
 cd ~/my-hypr-dots/conf/
 mv .bashrc ~/.config
