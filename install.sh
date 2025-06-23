@@ -3,15 +3,21 @@ echo "Changing directory to my-hypr-dots"
 cd my-hypr-dots
 
 #mv my bashrc to home
-echo "Moving .bashrc to home directory"
+echo "configs"
 cd ~/my-hypr-dots/conf/
-mv .bashrc ~/
-mv .alias ~/
+mv .bashrc ~/.config
+mv .alias ~/.config
+mv hypr ~/.config
+mv wofi ~/.config
+mv alacritty ~/.config
+mv fastfech ~/.config
+mv waybar ~/.config
+mv thunar ~/.config
 
 # Install essential
 cd ~/my-hypr-dots
 echo "Installing essential"
-sudo pacman -S git terminator trash-cli curl kitty playerctl neovim steam bluez bluez-utils blueman pulseaudio pulseaudio-bluetooth pavucontrol brightnessctl gvfs-smb feh thunar bpytop ranger xorg-xrandr hyprpaper waybar
+sudo pacman -S git alacritty trash-cli curl playerctl neovim steam bluez bluez-utils blueman pulseaudio pulseaudio-bluetooth pavucontrol brightnessctl gvfs-smb thunar bpytop xorg-xrandr hyprpaper waybar
 
 #downloads wallpapers and renames the folder to Pic
 echo "Creating Pic directory and installing wallpaper pack"
